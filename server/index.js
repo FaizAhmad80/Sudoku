@@ -20,8 +20,13 @@ let board = [
 app.use(express.json());
 app.use(cors());
 
+
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
+});
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the home page!');
 });
 
 app.get("/puzzle", (req, res) => {
