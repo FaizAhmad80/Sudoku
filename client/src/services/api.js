@@ -1,4 +1,4 @@
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = https://sudoku-game-server.vercel.app;
 export const REST = {
   getBoard: function () {
     return fetch(`${apiUrl}/puzzle`);
