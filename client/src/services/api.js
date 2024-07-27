@@ -1,12 +1,13 @@
+const apiUrl = process.env.REACT_APP_API_URL;
 export const REST = {
   getBoard: function () {
-    return fetch(`http://localhost:5000/puzzle`);
+    return fetch(`${apiUrl}/puzzle`);
   },
   solveBoard: function (grid) {
     const data = {
       board: grid,
     };
-    return fetch(`http://localhost:5000/solve`, {
+    return fetch(`${apiUrl}/solve`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -18,7 +19,7 @@ export const REST = {
     const data = {
       board: grid,
     };
-    return fetch(`http://localhost:5000/validate`, {
+    return fetch(`${apiUrl}/validate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
