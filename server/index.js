@@ -22,9 +22,9 @@ let board = [
 
 app.use(express.json());
 app.use(cors(
-//   {
-//   origin: 'https://sudoku-game-server.vercel.app'
-// }
+  {
+  origin: 'https://sudoku-game-server.vercel.app'
+}
 ));
 
 const port = 5000;
