@@ -1,5 +1,8 @@
-import express from "express";
-import cors from "cors";
+// import express from "express";
+const express = require('express');
+// import cors from "cors";
+const cors = require('cors');
+
 import { Sudoku } from "./Sudoku.js";
 import { Util } from "./Util.js";
 
@@ -24,8 +27,8 @@ app.use(cors(
 // }
 ));
 
-
-app.listen(5000, () => {
+const port = 5000;
+app.listen(port, () => {
   console.log("Server is running on port 5000");
 });
 
