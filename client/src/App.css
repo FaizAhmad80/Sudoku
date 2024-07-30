@@ -1,8 +1,11 @@
 :root {
-  --color1: rgb(233, 181, 172);
+  /* --color1: rgb(233, 181, 172);
   --color1-dark: rgb(201, 153, 145);
-  --color1-darker: rgb(170, 129, 122);
-  --color2: rgb(139, 125, 171);
+  --color1-darker: rgb(170, 129, 122); */
+  --color1: rgb(233, 224, 172);
+  --color1-dark: rgb(208, 209, 150);
+  --color1-darker: rgb(170, 168, 122);
+  --color2: rgb(226, 249, 249);
   --color2-dark: rgb(103, 93, 128);
   --color2-darker: rgb(68, 61, 85);
 }
@@ -24,13 +27,13 @@
 }
 
 .tile {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   font-size: 32px;
   outline: none;
   background-color: var(--color1);
-  border: 2px solid black;
+  border: 0.5px solid black;
   margin-left: -1px;
   margin-top: -1px;
 }
@@ -43,19 +46,20 @@
 .initial {
   margin-left: -1px;
   margin-top: -1px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   font-size: 32px;
   outline: none;
   background-color: var(--color1-darker);
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .board {
   display: grid;
   grid-template-columns: repeat(9, 0fr);
   padding: 20px;
+  border: 1px solid black;
 }
 
 .interface {
@@ -102,8 +106,8 @@ button:hover {
 }
 
 .box-left{
-  border-left: 4px solid rgb(49, 53, 49);
+  border-left: 2px solid rgb(49, 53, 49);
 }
 .box-up{
-  border-top : 4px solid rgb(39, 42, 39);
+  border-top : 2px solid rgb(39, 42, 39);
 }
