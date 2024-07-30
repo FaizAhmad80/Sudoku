@@ -67,8 +67,8 @@
 //   res.status(200).send({ status: status });
 // });
 
-import { Sudoku } from "../../Sudoku.js";
-import { Util } from "../../Util.js";
+import { Sudoku } from "./Sudoku.js";
+import { Util } from "./Util.js";
 
 export default async function handler(req, res) {
   try {
