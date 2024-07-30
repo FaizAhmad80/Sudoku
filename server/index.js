@@ -18,9 +18,11 @@ let board = [
 ];
 
 app.use(express.json());
-app.use(cors({
-  origin: 'https://sudoku-game-server.vercel.app'
-}));
+app.use(cors(
+//   {
+//   origin: 'https://sudoku-game-server.vercel.app'
+// }
+));
 
 
 app.listen(5000, () => {
