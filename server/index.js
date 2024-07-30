@@ -72,11 +72,11 @@ import { Util } from "./Util.js";
 
 export default async function handler(req, res) {
   try {
-    if (req.method === 'GET' && req.url === '/puzzle') {
+    if (req.method === 'GET' && req.url === '/api/puzzle') {
       let sudoku = new Sudoku();
       let puzzle = sudoku.puzzle;
       res.status(200).json({ game: puzzle });
-    } else if (req.method === 'POST' && req.url === '/solve') {
+    } else if (req.method === 'POST' && req.url === '/api/solve') {
       let puzzle = [];
       Util.copyGrid(req.body.board, puzzle);
       let sudoku = new Sudoku(puzzle);
@@ -91,7 +91,7 @@ export default async function handler(req, res) {
         status = false;
       }
       res.status(200).json({ solution: solvedSudoku, status: status });
-    } else if (req.method === 'POST' && req.url === '/validate') {
+    } else if (req.method === 'POST' && req.url === '/api/validate') {
       let puzzle = [];
       Util.copyGrid(req.body.board, puzzle);
       let sudoku = new Sudoku(puzzle);
