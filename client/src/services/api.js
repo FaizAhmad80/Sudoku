@@ -1,4 +1,4 @@
-const apiUrl = 'https://sudoku-game-server.vercel.app:5000';
+const apiUrl = 'https://sudoku-game-server.vercel.app';
 export const REST = {
   getBoard: function () {
     return fetch(`${apiUrl}/puzzle`);
